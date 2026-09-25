@@ -14,9 +14,9 @@ def connect_db():
 def create_tables():
     connection = connect_db()
 
-    # ==========================================
+    
     # USERS TABLE
-    # ==========================================
+   
 
     connection.execute("""
         CREATE TABLE IF NOT EXISTS users (
@@ -28,9 +28,9 @@ def create_tables():
         )
     """)
 
-    # ==========================================
+    
     # JOBS TABLE
-    # ==========================================
+   
 
     connection.execute("""
         CREATE TABLE IF NOT EXISTS jobs (
@@ -54,10 +54,9 @@ def create_tables():
         )
     """)
 
-    # ==========================================
+    
     # INTERVIEWS TABLE
-    # ==========================================
-
+  
     connection.execute("""
         CREATE TABLE IF NOT EXISTS interviews (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
